@@ -1,0 +1,263 @@
+/* ================= БАЗОВІ СТИЛІ ================= */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.5;
+  background: #f9f9fb;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* ================= ШАПКА ================= */
+header {
+  background: linear-gradient(90deg, #0077cc, #00bfff);
+  color: white;
+  padding: 1rem 0;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+header .logo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+header .logo img {
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
+  border: 2px solid white;
+  cursor: pointer;
+}
+
+header h1 {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+nav ul {
+  display: flex;
+  gap: 1rem;
+  margin-top: 0.5rem;
+  list-style: none;
+}
+
+nav a {
+  background: rgba(255,255,255,0.2);
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  color: white;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  background: rgba(255,255,255,0.5);
+  transform: translateY(-2px);
+}
+
+/* ================= КНОПКИ ================= */
+button,
+.btn {
+  background: #0077cc;
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+button:hover,
+.btn:hover {
+  background: #005fa3;
+  transform: translateY(-2px);
+}
+
+/* ================= ГОЛОВНИЙ КОНТЕНТ ================= */
+main {
+  padding: 2rem 0;
+}
+
+h2 {
+  color: #0077cc;
+  margin-bottom: 1rem;
+}
+
+/* ================= СЕКЦІЇ ================= */
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  gap: 2rem;
+}
+
+article {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+  margin-bottom: 1.5rem;
+}
+
+article ul {
+  padding-left: 1.2rem;
+  margin-top: 0.5rem;
+}
+
+aside {
+  background: #f0f8ff;
+  padding: 1rem;
+  border-radius: 12px;
+  border: 1px solid #ddd;
+}
+
+/* ================= ПОСИЛАННЯ В ASIDE ================= */
+aside a {
+  display: inline-block;
+  padding: 0.3rem 0.5rem;
+  border-radius: 6px;
+  transition: transform 0.2s ease, background 0.2s ease, color 0.2s ease;
+  color: #0077cc;
+  margin-bottom: 0.5rem;
+}
+
+aside a:hover {
+  background: #0077cc;
+  color: white;
+  transform: translateY(-3px);
+}
+
+/* ================= ТАБЛИЦЯ ================= */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+th, td {
+  border: 1px solid #0077cc;
+  padding: 0.5rem;
+  text-align: center;
+}
+
+caption {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+/* ================= КУРСИ ================= */
+.courses {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.course {
+  background: white;
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.course:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+.course img {
+  width: 100%;         
+  height: 200px;      
+  object-fit: cover;   
+  border-radius: 8px;
+  margin-bottom: 0.7rem;
+}
+
+/* ================= ФОРМА ================= */
+form {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  max-width: 600px;
+  margin: 2rem auto;
+}
+
+form label {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 0.3rem;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="number"],
+form select,
+form textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+form textarea {
+  resize: none;
+}
+
+fieldset {
+  border: 2px solid #0077cc;
+  border-radius: 10px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+legend {
+  font-weight: bold;
+  padding: 0 0.5rem;
+}
+
+#char-count {
+  font-size: 0.9rem;
+  color: #555;
+  margin-top: -0.5rem;
+  margin-bottom: 1rem;
+}
+
+/* ЧЕКБОКС У РЯДОК З ТЕКСТОМ */
+form .checkbox-inline {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* ================= ФУТЕР ================= */
+footer {
+  background: #0077cc;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
