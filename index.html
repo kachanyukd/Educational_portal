@@ -6,102 +6,112 @@
   <title>Дитячий навчальний портал</title>
 </head>
 <body>
-  <header class="container" role="banner">
-    <div class="logo">
-      <img src="images/main_logo.png" alt="Логотип порталу">
-      <h1>Дитячий навчальний портал</h1>
-    </div>
-    <nav aria-label="Головне меню">
-      <ul>
-        <li><a href="#materials">Навчальні матеріали</a></li>
-        <li><a href="feedback.html">Зворотній зв’язок</a></li>
-        <li><a href="courses.html">Наші курси</a></li>
-      </ul>
-    </nav>
+  <header role="banner">
+    <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+      <tr>
+        <td width="140" valign="middle">
+          <a href="index.html">
+            <img src="images/main_logo.png" alt="Логотип порталу" width="120" height="120">
+          </a>
+        </td>
+        <td valign="middle">
+          <h1 style="margin:0">Дитячий навчальний портал</h1>
+        </td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>
+          <nav aria-label="Головне меню">
+            <a href="#materials">Навчальні матеріали</a> |
+            <a href="feedback.html">Зворотній зв’язок</a> |
+            <a href="courses.html">Наші курси</a>
+          </nav>
+        </td>
+      </tr>
+    </table>
   </header>
 
-  <main class="container">
-    <div class="grid">
-      <section>
-        <article>
-          <h2>Мета порталу</h2>
-          <p>Наш веб-портал створений для того, щоб допомогти дітям навчатися легко та цікаво:</p>
-          <ul>
-            <li>Створення інтерактивних завдань</li>
-            <li>Підтримка учнів у процесі навчання</li>
-            <li>Розвиток логічного мислення та креативності</li>
-          </ul>
-        </article>
+  <main>
+    <section>
+      <article>
+        <h2>Мета порталу</h2>
+        <p>Наш веб-портал створений для того, щоб допомогти дітям навчатися легко та цікаво:</p>
+        <ul>
+          <li>Створення інтерактивних завдань</li>
+          <li>Підтримка учнів у процесі навчання</li>
+          <li>Розвиток логічного мислення та креативності</li>
+        </ul>
+      </article>
 
-        <article id="materials">
-          <h2>Чого навчаємо</h2>
-          <p>Діти мають змогу вивчати різні дисципліни у зручному форматі:</p>
-          <table>
-            <caption>Список курсів для вивчення</caption>
-            <thead>
-              <tr>
-                <th>№</th>
-                <th>Тема</th>
-                <th>Вікова група</th>
-                <th>Рівень</th>
-                <th>Тип завдань</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>1</td>
-                <td>Математика</td>
-                <td>6–8 років</td>
-                <td>Початковий</td>
-                <td>Ігрові завдання</td>
-              </tr>
-              <tr>
-                <td>2</td>
-                <td>Іноземна мова</td>
-                <td>9–12 років</td>
-                <td>Середній</td>
-                <td>Задачі та вікторини</td>
-              </tr>
-              <tr>
-                <td>3</td>
-                <td>Природознавство</td>
-                <td>6–10 років</td>
-                <td>Початковий</td>
-                <td>Мультимедіа</td>
-              </tr>
-              <tr>
-                <td>4</td>
-                <td>Інформатика</td>
-                <td>10–12 років</td>
-                <td>Середній</td>
-                <td>Прості програми</td>
-              </tr>
-              <tr>
-                <td>5</td>
-                <td>Малювання</td>
-                <td>Будь-який</td>
-                <td>Будь-який</td>
-                <td>Онлайн-галерея</td>
-              </tr>
-            </tbody>
-          </table>
-        </article>
+      <article id="materials">
+        <h2>Чого навчаємо</h2>
+        <p>Діти мають змогу вивчати різні дисципліни у зручному форматі:</p>
 
-        <section class="buttons">
-          <button>Перейти у власний кабінет</button>
-          <button>Зареєструватись</button>
-        </section>
+        <table border="1" cellpadding="8" cellspacing="0" rules="all">
+          <caption>Список курсів для вивчення</caption>
+          <thead>
+            <tr>
+              <th scope="col">№</th>
+              <th scope="col">Тема</th>
+              <th scope="col">Вікова група</th>
+              <th scope="col">Рівень</th>
+              <th scope="col">Тип завдань</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Математика</td>
+              <td>6–8 років</td>
+              <td>Початковий</td>
+              <td>Ігрові завдання</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Іноземна мова</td>
+              <td>9–12 років</td>
+              <td>Середній</td>
+              <td>Задачі та вікторини</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Природознавство</td>
+              <td>6–10 років</td>
+              <td>Початковий</td>
+              <td>Мультимедіа</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>Інформатика</td>
+              <td>10–12 років</td>
+              <td>Середній</td>
+              <td>Прості програми</td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>Малювання</td>
+              <td>Будь-який</td>
+              <td>Будь-який</td>
+              <td>Онлайн-галерея</td>
+            </tr>
+          </tbody>
+        </table>
+      </article>
+
+      <section><br>
+        <button>Перейти у власний кабінет</button>
+        <button>Зареєструватись</button>
       </section>
+    </section>
 
-      <aside>
-        <h3>Корисні ресурси</h3>
-        <p><a href="https://osvita.ua/" target="_blank">Osvita.ua</a></p>
-        <p><a href="https://mon.gov.ua/" target="_blank">МОН України</a></p>
-      </aside>
-    </div>
+    <aside>
+      <h3>Корисні ресурси</h3>
+      <p><a href="https://osvita.ua/" target="_blank" rel="noopener">Osvita.ua</a></p>
+      <p><a href="https://mon.gov.ua/" target="_blank" rel="noopener">МОН України</a></p>
+    </aside>
   </main>
 
-  <footer id="feedback">
+  <footer><br>
     <p>Адреса: м. Київ, вул. Богдана Гаврилишина, 24</p>
     <p>Телефони: +38 (067) 752-51-21, +38 (068) 752-51-21</p>
     <p>&copy; <time datetime="2025">2025</time> Дитячий навчальний портал</p>
