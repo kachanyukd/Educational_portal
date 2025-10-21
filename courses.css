@@ -144,3 +144,38 @@ footer {
   margin-top: 3rem;
   font-size: 0.95rem;
 }
+
+.accordion {
+  position: fixed;
+  top: 150px; 
+  left: 10px;
+  width: 170px;
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  z-index: 100;
+  overflow: hidden;
+}
+
+.accordion-item {
+  border-bottom: 1px solid #ddd;
+}
+
+.accordion-header {
+  padding: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  background: #52add7;
+}
+
+.accordion-header:hover {
+  background: #e0e0e0;
+}
+
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  padding: 0 10px;
+}
